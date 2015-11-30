@@ -12,7 +12,7 @@
   <div class="modal fade" id="modal-<%=f.id%>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="img-lrg modal-content">
-        <%= video_tag f.videourl,class: "videosize" %>
+        <%= video_tag f.videourl, controls: true, autobuffer: true, poster: "#{f.thumbnail}",class: "videosize", id:"video_player" %>
       </div>
     </div>
   </div>
