@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+// 
+//
+//
+// $.getJSON("http://localhost:3000/api/videos")
+//  .done(function(data){
+//  //get the html
+// var htmlTemplate = $(".template").html();
+// // compile into template
+// var compiler = _.template(htmlTemplate);
+// //give template data
+// var htmlified = compiler(data);
+// // add to HTML
+// $("body").append(htmlified);
+// });

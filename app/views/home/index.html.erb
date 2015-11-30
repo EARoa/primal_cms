@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>PrimalTV</h1>
+<p>Testing PrimalTV</p>
+
+  <div>
+    <% @videos.each do |f| %>
+      <%= f.title %>
+        <br>
+      <%= image_tag f.thumbnail, class:"videothumbnails"%>
+        <br>
+    <% end %>
+  </div>
