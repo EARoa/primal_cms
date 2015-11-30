@@ -1,26 +1,26 @@
-<%= render partial: "home/test2" %>
-
-
-
-
-<% if false %>
-
-
 <div class="container">
   <h1>PrimalTV</h1>
 
-    <div>
-      <% @videos.each do |f| %>
-        <%= f.title %>
-          <br>
-        <a href="<%= f.videourl %>">
-          <%= image_tag f.thumbnail, class:"videothumbnails"%>
-        </a>
-          <br>
-        <% end %>
+  <% @videos.each do |f| %>
+
+    <div class="img-thumbnail col-sm-6 col-md-3">
+      <center>
+        <%= image_tag f.thumbnail, class:"img-responsive", "data-toggle"=>"modal", "data-target"=>"#modal-#{f.id}" %>
+      <hr>
+        <b> <div class="uptext">  <%= f.title%> </div> </b>
+      </center>
     </div>
 
+  <center>
+    <div class="modal fade jsmodal" id="modal-<%=f.id%>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="img-lrg modal-content">
+          <%= video_tag f.videourl, controls: true, autobuffer: true, poster: "#{f.thumbnail}",class: "videosize" %>
+        </div>
+      </div>
+    </div>
+  </center>
+
+  <% end %>
+
 </div><!-- Container Div -->
-
-
-<% end %>
