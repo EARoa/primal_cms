@@ -5,7 +5,9 @@
     <% @videos.each do |f| %>
       <%= f.title %>
         <br>
+    <a href="<%= f.videourl %>">
       <%= image_tag f.thumbnail, class:"videothumbnails"%>
+    </a>
         <br>
     <% end %>
   </div>
