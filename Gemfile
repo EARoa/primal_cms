@@ -11,9 +11,6 @@ group :production do
   gem 'pg'
 end
 
-
-
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -57,3 +54,5 @@ end
 
 gem "active_model_serializers"
 gem "rails_admin"
+
+gem 'bootstrap-sass', '~> 3.3.6'

@@ -1,0 +1,13 @@
+<% @videos.each do |f| %>
+
+  <div class="col-sm-6 col-md-3">
+    <center>
+      <a href="<%= f.videourl %>">
+        <%= image_tag f.thumbnail, class:"videothumbnails img-responsive", "data-toggle"=>"modal", "data-target"=>"#modal-#{f.id}" %>
+      </a>
+      <hr>
+      <b> <div class="uptext">  <%= f.title%> </div></n></b>
+    </center>
+  </div>
+
+<% end %>

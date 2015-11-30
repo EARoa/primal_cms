@@ -1,13 +1,26 @@
-<h1>PrimalTV</h1>
-<p>Testing PrimalTV</p>
+<%= render partial: "home/test2" %>
 
-  <div>
-    <% @videos.each do |f| %>
-      <%= f.title %>
-        <br>
-    <a href="<%= f.videourl %>">
-      <%= image_tag f.thumbnail, class:"videothumbnails"%>
-    </a>
-        <br>
-    <% end %>
-  </div>
+
+
+
+<% if false %>
+
+
+<div class="container">
+  <h1>PrimalTV</h1>
+
+    <div>
+      <% @videos.each do |f| %>
+        <%= f.title %>
+          <br>
+        <a href="<%= f.videourl %>">
+          <%= image_tag f.thumbnail, class:"videothumbnails"%>
+        </a>
+          <br>
+        <% end %>
+    </div>
+
+</div><!-- Container Div -->
+
+
+<% end %>
