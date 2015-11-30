@@ -7,6 +7,10 @@ protect_from_forgery with: :reset_session
     render json: @videos
   end
 
+  def show
+    @videos = Video.all
+  end
+
   def create
     @video = Video.new(params.require(:video).permit(:title, :thumbnail, :videourl))
     @video.save
