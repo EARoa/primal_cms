@@ -9,12 +9,33 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
+
 <div class="container">
   <div class="navbar-text pull-left">
     <a href="/"><%= image_tag "logo-01.png", class: "logo img-responsive"%></a>
   </div>
+
+  <div class="navbar-text pull-right">
+
+  <% if user_signed_in? %>
+    <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link btn btn-default' %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link btn btn-danger'  %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link btn btn-primary'  %>
+    <%= link_to "Login", new_user_session_path, :class => 'navbar-link btn btn-success'  %>
+  <% end %>
+  </div>
 </div>
+
+
+
+
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
 
 <%= yield %>
 

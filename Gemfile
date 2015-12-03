@@ -54,5 +54,5 @@ end
 
 gem "active_model_serializers"
 gem "rails_admin"
-
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'devise'
