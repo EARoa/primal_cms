@@ -1,4 +1,5 @@
 class Api::VideosController < ApplicationController
+  skip_before_filter :authenticate_user!
 
 protect_from_forgery with: :reset_session
 
