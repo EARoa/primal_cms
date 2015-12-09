@@ -1,7 +1,7 @@
 <div class="container">
   <% @videos.each do |f| %>
 
-    <div class="img-thumbnail col-sm-6 col-md-3">
+    <div class="img-thumbnail col-sm-6 col-md-3 videocontainer">
       <center>
         <%= image_tag f.thumbnail, class:"img-responsive thumb", "data-toggle"=>"modal", "data-target"=>"#modal-#{f.id}" %>
       <hr>
