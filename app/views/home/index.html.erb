@@ -3,7 +3,7 @@
 
     <div class="img-thumbnail col-sm-6 col-md-3">
       <center>
-        <%= image_tag f.thumbnail, class:"img-responsive", "data-toggle"=>"modal", "data-target"=>"#modal-#{f.id}" %>
+        <%= image_tag f.thumbnail, class:"img-responsive thumb", "data-toggle"=>"modal", "data-target"=>"#modal-#{f.id}" %>
       <hr>
         <b> <div class="uptext">  <%= f.title%> </div> </b>
       </center>
@@ -14,6 +14,9 @@
       <div class="modal-dialog">
         <div class="img-lrg modal-content">
           <%= video_tag f.videourl, controls: true, autobuffer: true, poster: "#{f.thumbnail}",class: "videosize" %>
+            <hr />
+            <h1> <%= f.title %> </h1>
+            <div style="text-align: left; padding: 0em 1em 1em 1em;">  <%= f.description %> </div>
         </div>
       </div>
     </div>

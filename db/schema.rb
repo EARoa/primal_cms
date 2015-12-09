@@ -36,8 +36,10 @@ ActiveRecord::Schema.define(version: 20151203195055) do
     t.string   "title"
     t.string   "thumbnail"
     t.string   "videourl"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "category"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

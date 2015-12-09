@@ -4,6 +4,8 @@ class CreateVideos < ActiveRecord::Migration
       t.string :title
       t.string :thumbnail
       t.string :videourl
+      t.string :category
+      t.text :description
 
       t.timestamps null: false
     end
