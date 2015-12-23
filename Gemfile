@@ -57,3 +57,4 @@ gem "rails_admin"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'rails_12factor'
+gem 'stripe'
