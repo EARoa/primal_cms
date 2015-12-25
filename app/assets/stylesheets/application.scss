@@ -2,7 +2,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+.form h2, label, a{
+  color:#13a563;
+}
 .videothumbnails{
   width: 10em;
 }
@@ -20,6 +22,7 @@ a {
 body{
   // background-color: #F9F9F9;
   background-color: #323232;
+  font-family: 'Lato', sans-serif;
 }
 
 .logo{
