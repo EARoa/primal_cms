@@ -4,6 +4,32 @@ RailsAdmin.config do |config|
    redirect_to main_app.root_path unless current_user.admin == true
   end
 
+config.main_app_name = ['PrimalTV', 'Admin']
+
+config.model User do
+  list do
+    field :id do # (1)
+      column_width 1
+    end
+    field :first_name do # (1)
+      column_width 10
+    end
+    field :last_name do # (1)
+      column_width 10
+    end
+    field :email do # (1)
+      column_width 10
+    end
+    field :sign_in_count do # (1)
+      column_width 10
+    end
+  end
+end
+
+
+
+
+
 
   ### Popular gems integration
 
