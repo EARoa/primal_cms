@@ -1,4 +1,9 @@
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+/*
+ *= require devise_bootstrap_views
+ *= require_tree .
+ *= require_self
+ */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -36,4 +41,9 @@ body{
 .videocontainer{
   margin: 10px 10px 10px 10px;
   // margin-left: 10px;
+}
+
+.alert{
+  max-width: 81.5em;
+  margin-left: 5em;
 }

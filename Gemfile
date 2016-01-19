@@ -56,6 +56,7 @@ gem "active_model_serializers"
 gem "rails_admin"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
+gem 'devise-bootstrap-views'
 gem 'rails_12factor'
 gem 'better_errors'
 gem 'dotenv'
