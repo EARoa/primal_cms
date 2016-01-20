@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+  root 'welcome#index'
+
   devise_for :users, :controllers => { :registrations => 'registrations' }
-  root 'home#index'
+  get 'home/index', as: :video_home
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   namespace :api do
