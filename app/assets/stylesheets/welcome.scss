@@ -62,27 +62,32 @@
     .left {
       height: 20em; } }
 
+      //
+      // #hdr.video {
+      //   position: absolute;
+      //   z-index: -5;
+      //   max-width: 100%;
+      //   // max-height: 100%;
+      //   /* width: 100%; */
+      //   /* height: 100%; */ }
+      //
+      // #hdr.video.fillWidth {
+      //   // max-height: 100%;
+      //   max-width: 100%;
+      //
+      // }
 
-      video {
-  position: absolute;
-  z-index: -5;
-  max-width: 100%;
-  // max-height: 100%;
-  /* width: 100%; */
-  /* height: 100%; */ }
+      .beforevideo {
+        z-index: -10; }
 
-video.fillWidth {
-  // max-height: 100%;
-  max-width: 100%;
-
-}
-
-.beforevideo {
-  z-index: -10; }
-
-  #video-container {
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden; }
+        #video-container {
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        z-index: -5;
+        max-width: 100%;
+        max-width: 100%;
+       }
